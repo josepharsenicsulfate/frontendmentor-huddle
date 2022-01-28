@@ -15,6 +15,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     background-color: var(--violet-);
     background-image: url('../images/bg-desktop.svg');
+    background-repeat: no-repeat;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -22,29 +23,47 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .sns-link-list.row .col{
-    align-items: flex-end;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
 }
 
-.sns-icon{
+.sns-link-list.row .col a:hover i{
+    border: 1px solid var(--softmagenta-);
+    color: var(--softmagenta-);
+}
+
+.sns-link-list.row .col a i{
     color: white;
+    padding: 15px;
+}
+
+.sns-link-list.row .col a{
     border: 1px solid white;
     border-radius: 50%;
-    padding: 15px;
+}
+
+.img{
+    width: 500px;
+    align-self: center;
 }
 
 .btn{
     background-color: white;
-    border-radius: 16px;
+    border-radius: 30px;
     color: var(--violet-);
+    width: 190px;
+    height: 40px;
+    box-shadow: 1px 2px 5px 1px rgba(31, 31, 31, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn:hover{
     background-color: var(--softmagenta-);
     color: white;
-}
-
-.img{
-    width: 50%;
+    transition: 0.2s;
 }
 
 .attribution { font-size: 11px; text-align: center; }
@@ -53,5 +72,10 @@ h1, h2, h3, h4, h5, h6{
 @media screen and (max-width: 375px){
     body{
         background-image: url('../images/bg-mobile.svg');
+        background-repeat: no-repeat;
+    }
+
+    .btn{
+        align-self: center;
     }
 }
