@@ -6,6 +6,11 @@
     --softmagenta-: hsl(300, 69%, 71%);
 }
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
     font-family: 'Open Sans', sans-serif;
     background-color: var(--violet-);
@@ -16,15 +21,21 @@ h1, h2, h3, h4, h5, h6{
     font-family: 'Poppins', sans-serif;
 }
 
-i{
+.sns-link-list.row .col{
+    align-items: flex-end;
+}
+
+.sns-icon{
     color: white;
     border: 1px solid white;
-    padding: 15px;
     border-radius: 50%;
+    padding: 15px;
 }
 
 .btn{
     background-color: white;
+    border-radius: 16px;
+    color: var(--violet-);
 }
 
 .btn:hover{
@@ -32,8 +43,8 @@ i{
     color: white;
 }
 
-.container .row{
-    float: right;
+.img{
+    width: 50%;
 }
 
 .attribution { font-size: 11px; text-align: center; }
