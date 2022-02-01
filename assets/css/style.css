@@ -22,30 +22,36 @@ h1, h2, h3, h4, h5, h6{
     font-family: 'Poppins', sans-serif;
 }
 
-.sns-link-list.row .col{
+.sns-link-list.row{
     display: flex;
-    align-items: center;
+    justify-content: right;
     text-decoration: none;
+    width: 100%;
 }
 
-.sns-link-list.row .col a:hover i{
+.sns-link-list.row a:hover i{
     border: 1px solid var(--softmagenta-);
     color: var(--softmagenta-);
 }
 
-.sns-link-list.row .col a i{
+.sns-link-list.row a i{
     color: white;
-    padding: 15px;
-}
-
-.sns-link-list.row .col a{
+    padding: 13px;
+    width: 13px;
     border: 1px solid white;
     border-radius: 50%;
+    margin-right: 13px;
+    margin-top: 40px;
+    font-size: 13px;
 }
 
 .img{
-    width: 500px;
+    width: 100%;
     align-self: center;
+}
+
+.logo{
+    width: 200px;
 }
 
 .btn{
@@ -75,7 +81,22 @@ h1, h2, h3, h4, h5, h6{
         background-repeat: no-repeat;
     }
 
+    p{
+        font-size: 16px;
+    }
+
     .btn{
         align-self: center;
+    }
+
+    .sns-link-list.row{
+        width: 70%;
+        justify-content: space-around;
+        text-decoration: none;
+        align-self: center;
+    }
+
+    .sns-link-list.row a i{
+        margin-right: 0;
     }
 }

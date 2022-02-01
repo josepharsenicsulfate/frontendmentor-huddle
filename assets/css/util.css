@@ -2,6 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    padding: 75px;
 }
 
 .container .row{
@@ -19,55 +20,25 @@
 
 .w-50{ width: 50%;}
 
-.p-25{ padding: 25px;}
-
 .pt-25{ padding-top: 25px; }
 
 .pb-25{ padding-bottom: 25px; }
 
-.pl-25{ padding-left: 25px; }
-
-.pr-25{ padding-right: 25px; }
-
-.px-25{ padding-right: 25px; padding-left: 25px; }
-
-.py-25{ padding-top: 25px; padding-bottom: 25px; }
-
-.p-15{ padding: 15px;}
-
-.pt-15{ padding-top: 15px; }
-
-.pb-15{ padding-bottom: 15px; }
-
-.pl-15{ padding-left: 15px; }
-
-.pr-15{ padding-right: 15px; }
-
 .px-15{ padding-right: 15px; padding-left: 15px; }
 
-.py-15{ padding-top: 15px; padding-bottom: 15px; }
-
-.m-15{ margin: 15px;}
-
-.mt-15{ margin-top: 15px; }
-
-.mb-15{ margin-bottom: 15px; }
-
-.ml-15{ margin-left: 15px; }
-
-.mr-15{ margin-right: 15px; }
-
-.mx-15{ margin-right: 15px; margin-left: 15px; }
-
-.my-15{ margin-top: 15px; margin-bottom: 15px; }
+.my-25{ margin-top: 25px; margin-bottom: 25px; }
 
 @media screen and (max-width: 375px) {
+    .container{
+        padding: 50px 25px;
+    }
+
     .container .row .col{
         text-align: center;
         width: 100%;
     }
 
     .img{
-        width: 100%;
+        width: 95%;
     }
 }
