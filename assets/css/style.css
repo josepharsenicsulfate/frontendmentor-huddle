@@ -22,6 +22,24 @@ h1, h2, h3, h4, h5, h6{
     font-family: 'Poppins', sans-serif;
 }
 
+.text-cont{
+    width: 42%;
+    padding: 50px 50px 0px 50px;
+}
+
+.text-cont h2{
+    font-size: 42px;
+}
+
+.text-cont p{
+    margin: 25px 0;
+    font-size: 19px;
+}
+
+.img-cont{
+    width: 50%;
+}
+
 .sns-link-list.row{
     display: flex;
     justify-content: right;
@@ -41,7 +59,6 @@ h1, h2, h3, h4, h5, h6{
     border: 1px solid white;
     border-radius: 50%;
     margin-right: 13px;
-    margin-top: 40px;
     font-size: 13px;
 }
 
@@ -55,11 +72,12 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .btn{
+    margin: 25px 0;
     background-color: white;
     border-radius: 30px;
     color: var(--violet-);
     width: 190px;
-    height: 40px;
+    height: 45px;
     box-shadow: 1px 2px 5px 1px rgba(31, 31, 31, 0.8);
     display: flex;
     justify-content: center;
@@ -83,6 +101,14 @@ h1, h2, h3, h4, h5, h6{
 
     p{
         font-size: 16px;
+    }
+
+    .text-cont{
+        padding: 0;
+    }
+
+    .text-cont h2{
+        font-size: 25px;
     }
 
     .btn{
